@@ -1,9 +1,9 @@
-// premetive - call by value
+// premetive - call by value (use the stack memory // change will in  the copy)
 // -> string ,number,boolean , null ,undefined , symobole , bigInt
 
 // js is the dynamically type 
 
-//non premetive 
+//non premetive (use the heap memory // change in the original value )
 // -> reference type
 // array , objects , function 
 
@@ -20,3 +20,13 @@ const myfunction = function(){
 };
 
 console.log(myfunction());
+
+let nameStudent = 'jenil';
+console.log(nameStudent);
+
+let myName = "vaidehipatel";
+let anotherName = myName;
+anotherName = "patel_vaidehi";
+
+console.log(myName);
+console.log(anotherName);
